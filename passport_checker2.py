@@ -4,18 +4,28 @@ Created on Wed Nov  8 20:36:41 2023
 
 @author: raopr
 """
-# By submitting this assignment, I agree to the following:
-# "Aggies do not lie, cheat, or steal, or tolerate those who do."
-# "I have not given or received any unauthorized aid on this assignment."
-# Name: Pranav Rao
-# Section: 564
-# Assignment: 11.10 Lab
-# Date: 11/08/2023
-#
-#
-# YOUR CODE HERE
-#
+'''
+The security line is now moving at lightning speed! But now the TSA agents are worried that some of the
+“valid” passports are actually invalid. It turns out that each of those required fields has rules about what
+values are valid. 
 
+• byr – Birth year – four digits, between 1920 and 2007, inclusive
+• iyr – Issue year – four digits, between 2013 and 2023, inclusive
+• eyr – Expiration year – four digits, between 2023 and 2033, inclusive
+• hgt – Height – a number followed by either cm or in
+o If cm, the number must be between 150 and 193, inclusive
+o If in, the number must be between 59 and 76, inclusive
+• hcl – Hair color – a # followed by exactly 6 characters (0-9 or a-f)
+• ecl – Eye color – not required
+• pid – Passport ID – a nine-digit number, including leading zeroes
+• cid – Country ID – a three-digit number, NOT including leading zeroes 
+
+Write a program named passport_checker2.py that takes as input from the user a filename, reads the
+file, counts the number of valid passports based on the rules above, then writes the valid passport scans
+to a new file named valid_passports2.txt. Format your program’s output and your new file using the
+same format as Part A.
+
+'''
 #opens file inputed by user
 file_input = input("Enter the name of the file: ")
 add = open("valid_passports2.txt", "w")
