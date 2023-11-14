@@ -1,19 +1,10 @@
-#By submitting this assignment, I agree to the following:
-# "Aggies do not lie, cheat, or steal, or tolerate those who do."
-# "I have not given or received any unauthorized aid on this assignment."
-#
-# Names: Madison 
-# Liz 
-# Adam
-# Pranav
-# Section: 564
-# Assignment: team lab 8
-# Date: 10/17/2023
-#
-#
-# YOUR CODE HERE
-#
+'''
+Write a program to take as input from the user a time and display that time using ASCII art. Draw each digit three
+(3) characters wide and five (5) characters tall, and the colon one (1) character wide. Also take as input from the
+user the clock type (12 or 24 hours) as well as a preferred character. Draw one space between the digits, colon,
+and letters. You do NOT need a leading zero or blank space for times earlier than noon.
 
+'''
 final = [ [],[],[],[],[]]
 
 
