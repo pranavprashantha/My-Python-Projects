@@ -5,17 +5,26 @@ Created on Wed Nov  8 23:02:31 2023
 @author: raopr
 """
 
-# By submitting this assignment, I agree to the following:
-# "Aggies do not lie, cheat, or steal, or tolerate those who do."
-# "I have not given or received any unauthorized aid on this assignment."
-# Name: Pranav Rao
-# Section: 564
-# Assignment: 11.13 Lab
-# Date: 11/08/2023
-#
-#
-# YOUR CODE HERE
-#
+'''
+On Canvas, there is a CSV file posted with this assignment named WeatherDataCLL.csv that contains weather
+data from Easterwood Airport (in College Station) for 10 years. The data was taken from the National Oceanic
+and Atmospheric Administration’s National Centers for Environmental Information1. You can view the data by
+opening the file in any text or spreadsheet editor (e.g. Notepad++, Excel) or in your IDE. The first line of the file
+contains the column headers explaining what each column is. Note: Some days are missing data.
+Download the file and write a program named weather_data.py that does the following:
+
+1. Open the CSV file for reading
+2. Read the CSV file and compute
+    a. the maximum temperature seen over the 10-year period
+    b. the minimum temperature seen over the 10-year period
+3. Output the results to the console using the format below
+4. Perform the following three data analysis exercises and output the results to the console. Take as input
+from the user a month and year, then for that month,
+    a. Calculate the mean of the average temperatures (use 1 decimal place)
+    b. Calculate the mean relative humidity (use 1 decimal place)
+    c. Calculate the mean daily wind speed (use 2 decimal places)
+    d. Calculate the percentage of days with non-zero precipitation (use 1 decimal place)
+'''
 
 #open file
 file = open("WeatherDataCLL.csv", "r")
