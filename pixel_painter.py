@@ -5,18 +5,21 @@ Created on Wed Nov  8 22:18:22 2023
 @author: raopr
 """
 
-# By submitting this assignment, I agree to the following:
-# "Aggies do not lie, cheat, or steal, or tolerate those who do."
-# "I have not given or received any unauthorized aid on this assignment."
-# Name: Pranav Rao
-# Section: 564
-# Assignment: 11.12 Lab
-# Date: 11/08/2023
-#
-#
-# YOUR CODE HERE
-#
+'''
+Run length encoding is a form of data storage where runs of data are stored as a single data value. A run of
+data is a sequence of the same value that occurs in many consecutive elements. This type of data storage is
+efficient for simple graphic images such as icons, line drawings, and Conway’s Game of Life. For this activity,
+consider a binary image where each pixel is either light (a space) or dark (a character). Each line of the image is
+represented by comma separated values that indicate the number of consecutive pixels that are light and dark.
+The first value in a line always corresponds to the number of light pixels, and following values alternate
+between dark and light. For example, the line 1,2,3,4 represents 1 light pixel, followed by 2 dark pixels, 3
+light pixels, and finally 4 dark pixels. If a space is used to represent light pixels and the character O is used to
+represent dark pixels, the line would look like this (spaces underlined for clarity): _OO___OOOO
 
+Write a program named pixel_painter.py that takes as input a filename and a character, converts the contents
+of the file to pixel art using a space for light pixels and the entered character for dark pixels, and writes the art
+to a new file of the same name but with the .txt extension
+'''
 file_input = input("Enter the filename: ")
 add = open(f'{file_input[:-4]}.txt', "w")
 file = open(file_input, "r")
